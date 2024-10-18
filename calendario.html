@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario de Días Festivos de Bolivia</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        /* Centrando el contenido */
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        iframe {
+            border: 0;
+            width: 80%;
+            height: 600px;
+        }
+        .responsive-text {
+      color: rgb(224, 204, 87);
+      -webkit-text-stroke: 1px black;
+      font-family: 'Anton', sans-serif;
+      text-shadow: 2px 2px 4px #000;
+      width: 80%; /* Agregué un ancho relativo */
+    }
+  
+    @media (max-width: 600px) {
+      .responsive-text {
+        font-size: 8vw;
+      }
+    }
+  
+    @media (min-width: 601px) and (max-width: 1200px) {
+      .responsive-text {
+        font-size: 5vw;
+      }
+    }
+  
+    @media (min-width: 1201px) {
+      .responsive-text {
+        font-size: 4vw;
+      }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid" style="width: 100%; height: 100vh;">
+        <img src="img/6agosto3.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;" />
+        <div class="responsive-text" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+
+            <center>FUNDACION DEL <br>T.H san luis</center>
+        </div>
+    </div>
+    <h1>Calendario de Días Festivos de Bolivia</h1>
+    <!-- Calendario de Google en español, centrado en la página -->
+    <center>
+        <iframe
+            src="https://calendar.google.com/calendar/embed?src=es.bolivian%23holiday%40group.v.calendar.google.com&ctz=America%2FLa_Paz&hl=es"
+            style="border: 0;" frameborder="0" scrolling="no">
+        </iframe>
+    </center>
+</body>
+
+</html>
