@@ -1,0 +1,123 @@
+.background-image {
+    background: url('img/img.jpg') !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    filter: brightness(0.7); /* Ajusta el brillo de la imagen */
+}
+
+
+/*--------------------------------------------------------------
+# paracty fondo
+--------------------------------------------------------------*/
+.paracty {
+    background: url("img/logo/img.jpg") center center no-repeat;
+    background-size: cover;
+    padding: 60px 0;
+    position: relative;
+  }
+  
+  .paracty::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 9;
+  }
+  
+  .paracty .container {
+    position: relative;
+    z-index: 10;
+  }
+  
+  .paracty .member {
+    text-align: center;
+    margin-bottom: 80px;
+    position: relative;
+  }
+  
+  .paracty .member .pic {
+    overflow: hidden;
+  }
+  
+  .paracty .member .member-info {
+    position: absolute;
+    bottom: -80px;
+    left: 20px;
+    right: 20px;
+    background: #fff;
+    padding: 20px 0;
+    color: #433f39;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+  }
+  
+  .paracty .member h4 {
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #6c665c;
+    position: relative;
+    padding-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .paracty .member h4::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: #ffcf88;
+    bottom: 0;
+    left: calc(50% - 25px);
+  }
+  
+  .paracty .member span {
+    font-style: italic;
+    display: block;
+    font-size: 13px;
+  }
+  
+  .paracty .member .social {
+    margin-top: 15px;
+  }
+  
+  .paracty .member .social a {
+    transition: color 0.3s;
+    color: #7a7368;
+  }
+  
+  .paracty .member .social a:hover {
+    color: #ffb03b;
+  }
+  
+  .paracty .member .social i {
+    font-size: 16px;
+    margin: 0 2px;
+  }
+  
+  @media (max-width: 992px) {
+    .paracty .member {
+      margin-bottom: 110px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .paracty {
+      background-attachment: fixed;
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  
+  /*--------------------------------------------------------------
+  # Footer
+  --------------------------------------------------------------*/
